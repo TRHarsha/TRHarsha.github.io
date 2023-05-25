@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #666;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+}
+
+.section-header h2 {
+  margin-right: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.experience-item {
+  margin-bottom: 10px;
+}
+
+.experience-item .experience-title {
+  font-weight: bold;
+}
+
+.experience-item .experience-duration {
+  color: #666;
+  font-size: 14px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: #f2f2f2;
+  color: #666;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-list.hidden {
+  display: none;
+}
+
+.contact-toggle {
+  background-color: #f2f2f2;
+  color: #666;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}

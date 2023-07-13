@@ -79,3 +79,7 @@ ul {
   cursor: pointer;
   margin-top: 10px;
 }
+
+.hidden {
+  display: none;
+}

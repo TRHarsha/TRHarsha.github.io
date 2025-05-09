@@ -6,5 +6,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: ''/trharsha.github.io/',
+  base: '/TRHarsha.github.io/',
 });

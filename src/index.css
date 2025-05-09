@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 59 130 246;
+    --color-secondary: 139 92 246;
+    --color-accent: 20 184 166;
+    --color-success: 34 197 94;
+    --color-warning: 234 179 8;
+    --color-error: 239 68 68;
+    --color-background: 255 255 255;
+    --color-foreground: 17 24 39;
+    --color-muted: 107 114 128;
+    --color-surface: 249 250 251;
+    --color-surface-2: 243 244 246;
+    --color-border: 229 231 235;
+  }
+
+  .dark {
+    --color-primary: 96 165 250;
+    --color-secondary: 167 139 250;
+    --color-accent: 45 212 191;
+    --color-success: 74 222 128;
+    --color-warning: 250 204 21;
+    --color-error: 248 113 113;
+    --color-background: 17 24 39;
+    --color-foreground: 249 250 251;
+    --color-muted: 156 163 175;
+    --color-surface: 31 41 55;
+    --color-surface-2: 55 65 81;
+    --color-border: 75 85 99;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .bg-background {
+    background-color: rgb(var(--color-background));
+  }
+  .bg-foreground {
+    background-color: rgb(var(--color-foreground));
+  }
+  .bg-primary {
+    background-color: rgb(var(--color-primary));
+  }
+  .bg-secondary {
+    background-color: rgb(var(--color-secondary));
+  }
+  .bg-accent {
+    background-color: rgb(var(--color-accent));
+  }
+  .bg-surface {
+    background-color: rgb(var(--color-surface));
+  }
+  .bg-surface-2 {
+    background-color: rgb(var(--color-surface-2));
+  }
+  .text-foreground {
+    color: rgb(var(--color-foreground));
+  }
+  .text-muted {
+    color: rgb(var(--color-muted));
+  }
+  .text-primary {
+    color: rgb(var(--color-primary));
+  }
+  .text-secondary {
+    color: rgb(var(--color-secondary));
+  }
+  .text-accent {
+    color: rgb(var(--color-accent));
+  }
+  .border-border {
+    border-color: rgb(var(--color-border));
+  }
+
+  .persona-transition {
+    @apply transition-all duration-500 ease-in-out;
+  }
+}

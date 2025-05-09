@@ -6,5 +6,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: 'trharsha.github.io', // Replace 'portfolio' with your repository name
+  base: '/', // Replace 'portfolio' with your repository name
 });
